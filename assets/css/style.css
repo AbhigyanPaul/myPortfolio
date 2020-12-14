@@ -1,0 +1,92 @@
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  min-height: 10vh;
+  width: 100%;
+  background-color: #222831;
+  border-bottom: 1px solid #ffd369;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 0rem 5rem;
+  width: 100%;
+}
+.nav-links .link {
+  list-style: none;
+  margin: 0px 25px;
+  text-decoration: none;
+}
+.nav-links .link button {
+  font-size: 1rem;
+  border: transparent;
+  background: transparent;
+  color: #eeeeee;
+}
+.nav-links .link:nth-of-type(1) button {
+  font-family: "Langar", cursive;
+  font-size: 1.3rem;
+}
+.nav-links .link:nth-of-type(2) {
+  margin-left: auto;
+}
+.nav-links .contact {
+  border: 2px solid #ffd369;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: 0.2s all ease-in-out;
+}
+.nav-links .contact button {
+  color: #ffd369;
+}
+.nav-links .contact:hover {
+  background-color: #ffd369;
+}
+.nav-links .contact:hover button {
+  color: #222831;
+}
+
+.page {
+  min-height: 90vh;
+  padding: 5rem;
+  background-image: linear-gradient(to bottom, #222831, #393e46);
+  display: flex;
+}
+.page-section {
+  width: 50%;
+  min-height: 50vh;
+  padding: 5%;
+}
+.page-section-1 {
+  height: 100%;
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.page-section-1 h1 {
+  font-size: 3rem;
+  font-family: "Langar", cursive;
+  letter-spacing: 5px;
+  color: #ffd369;
+}
+.page-section-1 h3 {
+  font-size: 2rem;
+}
+.page-section-2 img {
+  width: 80%;
+  height: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */

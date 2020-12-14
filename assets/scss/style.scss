@@ -1,0 +1,108 @@
+// variables
+$color-black: #222831;
+$color-darkgrey: #393e46;
+$color-yellow: #ffd369;
+$color-white: #eeeeee;
+
+$font-body: 'Poppins', sans-serif;
+$font-heading: 'Langar', cursive;
+
+
+
+// global styling
+body {
+    font-size: 16px;
+    font-family: $font-body;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//main styliing
+#navbar {
+    min-height: 10vh;
+    width: 100%;
+    background-color: $color-black;
+    border-bottom: 1px solid $color-yellow;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0rem 5rem;
+    width: 100%;
+
+    .link {
+        list-style: none;
+        margin: 0px 25px;
+        text-decoration: none;
+        button {
+            font-size: 1rem;
+            border: transparent;
+            background: transparent;
+            color: $color-white;
+        }
+    }
+    .link:nth-of-type(1) button {
+        font-family: $font-heading;
+        font-size: 1.3rem;
+    }
+    .link:nth-of-type(2) {
+        margin-left: auto;
+    }
+    .contact {
+        border: 2px solid $color-yellow;
+        padding: 8px 10px;
+        border-radius: 4px;
+        transition: 0.2s all ease-in-out;
+        button {
+            color: $color-yellow;
+        }
+    }
+    .contact:hover {
+        background-color: $color-yellow;
+        button {
+            color: $color-black;
+        }
+    }
+
+}
+
+.page {
+    min-height: 90vh;
+    padding: 5rem;
+    background-image: linear-gradient(to bottom, $color-black, $color-darkgrey);
+    display: flex;
+
+    &-section {
+        width: 50%;
+        min-height: 50vh;
+        padding: 5%;
+
+        &-1 {
+            height: 100%;
+            color: $color-white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 3rem;
+                font-family: $font-heading;
+                letter-spacing: 5px;
+                color: $color-yellow;
+            }
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        &-2 img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
